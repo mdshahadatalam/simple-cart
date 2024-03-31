@@ -24,13 +24,13 @@
             </div>
             <div class="col-md-4">
                 <div class="d-flex align-items-center mt-5 pt-5 ">
-                    <button class="btn btn-danger m-2">Remove</button>
-                <input type="number" class="form-control text-center text-center " value="1">
-                <button class="btn btn-success m-2">Add</button>
+                    <button onclick="handleProductChange('laptop',false)" class="btn btn-danger m-2">Remove</button>
+                <input id="laptop" type="number" class="form-control text-center text-center " value="1">
+                <button onclick="handleProductChange('laptop',true)" class="btn btn-success m-2">Add</button>
                 </div>
             </div>
             <div class="col-md-5">
-                <h5 class="text-center mt-5 pt-5 text-muted" >৳<span>245000</span></h5>
+                <h5 class="text-center mt-5 pt-5 text-muted" >৳<span id="laptop-Total">245000</span></h5>
             </div>
         </div>
 
@@ -42,14 +42,14 @@
             </div>
             <div class="col-md-4">
                 <div class="d-flex align-items-center mt-5 pt-5 ">
-                    <button class="btn btn-danger m-2">Remove</button>
-                <input type="number" class="form-control text-center text-center " value="1">
-                <button class="btn btn-success m-2">Add</button>
+                    <button onclick="handleProductChange('phone',false)" class="btn btn-danger m-2">Remove</button>
+                <input id="phone" type="number" class="form-control text-center text-center " value="1">
+                <button onclick="handleProductChange('phone',true)" class="btn btn-success m-2">Add</button>
                 </div>
 
             </div>
             <div class="col-md-5">
-                <h5 class="text-center mt-5 pt-5 text-muted">৳<span>176999</span></h5>
+                <h5 class="text-center mt-5 pt-5 text-muted">৳<span id="phone-Total">176999</span></h5>
 
             </div>
         </div>
@@ -70,6 +70,8 @@
         </div>
         <button class="btn btn-info text-white m-2">Cheek Out</button>
     </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
